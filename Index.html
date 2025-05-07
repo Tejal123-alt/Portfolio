@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Personal Portfolio</p>
+                <h1>Hi, I'm <span>Tejal Gadhe</span><br>From MITAOE</h1>
+            </div>
+        </div>
+    </div>
+     <!-----------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Girl.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Tejal Haridas Gadhe, a first-year Computer Science Engineering student
+                         at MIT Academy of Engineering. I have a strong interest in technology, coding, 
+                         and developing innovative solutions. I am currently focused on web development 
+                         while enhancing my proficiency in programming languages such as C and Python. 
+                         I enjoy exploring new technologies and engaging in projects that encourage 
+                         critical thinking and efficient problem-solving. At present, I am working on
+                          developing my personal portfolio website to highlight my skills and showcase 
+                          my projects.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, C, Linux</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript (Beginner)</li>
+                            <li><span>Web App Development</span><br>Building responsive and functional web applications</li>
+                            <li><span>Problem-Solving & Logical Thinking</span><br>Strong analytical and logical reasoning skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Coding & Problem Solving</span><br>Sharpening my logical thinking by solving coding problems regularly.
+                                Working on mini-projects to apply and strengthen my skills in C and Python.</li>
+                            <li><span>Learning & Exploration</span><br>Always exploring new tools, technologies, and frameworks to expand my knowledge.
+                                Actively learning through online platforms and participating in developer communities to grow professionally.</li>
+                            <li><span>Personal Projects</span><br>Currently building a personal website to highlight my portfolio and technical abilities.
+                                Gaining hands-on experience in front-end development using HTML, CSS, and JavaScript.
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Currently in my first year, learning core computer science concepts and programming.<br>
+                            Gaining hands-on experience in C and Python.<br>
+                        Exploring web development and working on personal projects.</li>
+                            <li><span>2024 - 2028</span><br>MIT Academy of Engineering Bachelor of Technology (B.Tech) in Computer Science Engineering.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Designer</h2>
+                    <p>I design and develop modern, responsive, and user-centric websites using HTML, CSS, and JavaScript. My focus is on creating 
+                        visually appealing and functional digital experiences that adapt seamlessly across all devices.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>I design intuitive, visually appealing, and user-focused mobile applications that prioritize seamless user experiences.From 
+                         wireframing to final UI/UX implementation, I ensure each app is functional, engaging, and aligned with modern design standards.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Problem Sovling</h2>
+                    <p>I develop clean, efficient, and well-structured code using C and Python, consistently refining my problem-solving abilities and logical 
+                        thinking through regular participation in coding challenges and practical programming tasks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------portfolio---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to music and make you feel good.
+                            Download it from play store.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app helps to explare the things and buy best one.
+                            Download it from play store
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-------------------contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>Email: 202401040003@mitaoe.ac.in</p>
+                    <p><i class="fa-solid fa-phone"></i>Mobile No.: 3675637786</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Tejal<i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWMUzDUqKzbs7vPOzky9KYx8v7x9EuTe5j_QVIh_osbnEWt8sIWHZctz8y6dHpDKGp/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
